@@ -11,7 +11,7 @@ command `java -jar test-ignite-0.0.1.jar`
 
 #### Prefill cache
 In `initialData` folder stored some random data.
-You can just run the `load-initial.sh` script and test the app
+You can just run the `./load-initial.sh YOUR_IP` (where `YOUR_IP` - is IP address of server) script and test the app
 
 #### API
 * `GET /cell/{id}` - get cell info
@@ -25,6 +25,8 @@ You can just run the `load-initial.sh` script and test the app
 * `POST /profile/batch `- put batch of profiles to cache
 
 #### Docker
-[Docker image](https://hub.docker.com/r/mrdru/bl-ignite/)
+[Docker image](https://hub.docker.com/r/mrdru/test-ignite/)
 
-For start type `sudo docker run -it bl-ignite run.sh`
+For start type `sudo docker run -it mrdru/test-ignite`
+
+Service will be available on port 8080
